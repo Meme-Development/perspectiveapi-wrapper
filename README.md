@@ -1,4 +1,4 @@
-LAUNCH STATUS - BETA
+# LAUNCH STATUS - BETA
 
 <p align="center">
    <img src="https://img.shields.io/github/stars/Meme-Development/perspectiveapi-wrapper.svg?style=for-the-badge">
