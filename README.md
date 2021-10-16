@@ -36,7 +36,7 @@ Here's why:
    npm install perspectiveapi-wrapper@latest
    ```
 3. Enter your API & get rid of the toxic
-```JS
+```
 const toxic_police = require('perspectiveapi-wrapper');
 
 toxic_police({ apiKey: "api key here!" }, "Memer Development is cool!", (res) => {
