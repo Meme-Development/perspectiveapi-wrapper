@@ -1,4 +1,5 @@
 const { google } = require("googleapis");
+
 function Analyze (options = { apiKey }, content, resultFn){
 		const opt = options;
 		const key = opt.apiKey;
