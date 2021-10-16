@@ -3,6 +3,6 @@
 const client = require('./src/PerspectiveClient');
 
 
-client({ apiKey: "api key here!" }, "Memer Development is cool!", (res) => {
+client({ apiKey: "api key here!" }, "Some text here!", (res) => {
   console.log(res);
 });
