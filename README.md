@@ -41,9 +41,8 @@ Here's why:
 ```
 const toxic_police = require('perspectiveapi-wrapper');
 
-toxic_police({ apiKey: "api key here!" }, "Memer Development is cool!", (res) => {
+toxic_police({ apiKey: "api key here!" }, "Text to analyze", (res) => {
   console.log(res);
-  
 });
 ```
 
