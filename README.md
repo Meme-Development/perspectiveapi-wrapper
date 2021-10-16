@@ -5,7 +5,7 @@
 </p>   
 
 <p align="center">
-    <strong> An awesome module that can help mitigate toxicity and ensure healthy dialogue online. based on <a href="https://www.perspectiveapi.com/">Perspective API</a>.</strong>
+    <strong> An awesome module that can help remove toxicity and ensure healthy dialogue online. based on <a href="https://www.perspectiveapi.com/">Perspective API</a>.</strong>
     <br />
     <a href="https://github.com/Meme-Development/perspectiveapi-wrapper/wiki"><strong>Explore the docs »</strong></a>
     <br />
