@@ -39,7 +39,7 @@ Here's why:
    ```
 3. Enter your API & get rid of the toxic
 ```
-const toxic_police = require('./src/PerspectiveClient');
+const toxic_police = require('perspectiveapi-wrapper');
 
 toxic_police({ apiKey: "api key here!", content: "Something" }, (res) => {
   console.log(res);
