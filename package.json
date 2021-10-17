@@ -1,0 +1,16 @@
+{
+  "name": "some-perspective-wrapper",
+  "version": "1.0.0",
+  "description": "Some description",
+  "types": "./types/app.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "googleapis": "^88.2.0"
+  }
+}
