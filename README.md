@@ -39,9 +39,9 @@ Here's why:
    ```
 3. Enter your API & get rid of the toxic
 ```
-const toxic_police = require('perspectiveapi-wrapper');
+const toxic_police = require('./src/PerspectiveClient');
 
-toxic_police({ apiKey: "api key here!" }, "Text to analyze", (res) => {
+toxic_police({ apiKey: "api key here!", content: "Something" }, (res) => {
   console.log(res);
 });
 ```
