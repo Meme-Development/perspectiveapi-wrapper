@@ -1,8 +1,8 @@
 // An example request using our package!
 
-const client = require('./src/PerspectiveClient');
+const toxic_police = require('./src/PerspectiveClient');
 
 
-client({ apiKey: "api key here!" }, "Some text here!", (res) => {
+toxic_police({ apiKey: "api key here!", content: "Something" }, (res) => {
   console.log(res);
 });
