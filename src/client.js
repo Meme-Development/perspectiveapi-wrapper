@@ -19,6 +19,7 @@ function Analyze(
     apiKey,
     content,
     getOriginalData,
+    getOriginalValue,
   },
   resultFn
 ) {
@@ -43,9 +44,11 @@ function Analyze(
     );
   }
 
-  if (key.length <= 0) {
-    throw new WrapperError("API key has to be greater than 0 characters");
-  } else if (content.length <= 0) {
+  if (key.length <= 0 || !key) {
+    throw new WrapperError(
+      "API key has to be provided / greater than 0 characters"
+    );
+  } else if (content.length <= 0 || !content) {
     throw new WrapperError(
       "The length of the content has to be greater than 0"
     );
@@ -69,21 +72,21 @@ function Analyze(
           resource: r,
         },
         (err, re) => {
-          if (err) throw new WrapperError("Unable to make the request");
+          if (err) throw new WrapperError("Unable to the make request");
           else
             try {
-              if (opt.getOriginalData) {
-                resultFn(re.data);
-              } else if (opt.getOriginalValue) {
-                resultFn(re.data.attributeScores.TOXICITY.summaryScore.value);
-              } else if (opt.getOriginalData && opt.getOriginalValue) {
+              if (opt.getOriginalData && opt.getOriginalValue) {
                 throw new WrapperError(
-                  "getOriginalValue and getOriginalData cannot be enable togehter!"
+                  "getOriginalValue and getOriginalData cannot be enabled togehter!"
                 );
               } else if (!opt.getOriginalData && !opt.getOriginalValue) {
                 resultFn(
                   re.data.attributeScores.TOXICITY.summaryScore.value.toFixed(2)
                 );
+              } else if (opt.getOriginalData) {
+                resultFn(re.data);
+              } else if (opt.getOriginalValue) {
+                resultFn(re.data.attributeScores.TOXICITY.summaryScore.value);
               }
             } catch (err) {
               throw new WrapperError(err);
