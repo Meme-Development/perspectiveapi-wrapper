@@ -69,7 +69,7 @@ function Analyze(
           resource: r,
         },
         (err, re) => {
-          if (err) throw new WrapperError("Unable to the make request");
+          if (err) throw new WrapperError("Unable to make the request");
           else
             try {
               if (opt.getOriginalData) {
