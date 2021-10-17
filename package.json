@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Some description",
   "types": "./types/app.d.ts",
-  "main": "index.js",
+  "main": "exports.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node exports.js"
   },
   "keywords": [],
   "author": "",
