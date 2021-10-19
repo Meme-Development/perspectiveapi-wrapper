@@ -14,7 +14,7 @@ class WrapperError extends ErrorConstructor {
 	}
 }
 class PerspectiveWrapper {
-	constructor(options={ apiKey }) {
+	constructor(options={ apiKey: null }) {
 		this.apiKey = options.apiKey ? options.apiKey : null;
 		if (!this.apiKey || this.apiKey.length == 0) {
 			throw new WrapperError("Please provide the API key!");
