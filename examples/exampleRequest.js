@@ -1,8 +1,11 @@
 // An example request using our package!
 
-const toxic_police = require('./src/client');
+const client = require('./src/client');
 
+const toxic_police = new client(
+	{apiKey: "your api key!"}
+);
 
-toxic_police({ apiKey: "api key here!", content: "Something" }, (res) => {
-  console.log(res);
+toxic_police.Analyze("Hello World!", (r) => {
+	console.log(r);
 });
