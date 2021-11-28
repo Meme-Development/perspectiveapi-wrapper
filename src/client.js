@@ -84,7 +84,7 @@ class PerspectiveWrapper {
 								// 	resultFn(re.data.attributeScores.TOXICITY.summaryScore.value);
 								// }
 
-                 // Fixing this tommorow
+                 // Fixing this later
 								resultFn(	re.data.attributeScores.TOXICITY.summaryScore.value.toFixed(2)
 								);
 							} catch (err) {
