@@ -1,6 +1,6 @@
 {
-  "name": "some-perspective-wrapper",
-  "version": "1.0.0",
+  "name": "perspectiveapi-wrapper",
+  "version": "1.0.2",
   "description": "Some description",
   "types": "./types/app.d.ts",
   "main": "exports.js",
