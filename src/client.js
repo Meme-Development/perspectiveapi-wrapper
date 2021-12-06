@@ -64,7 +64,7 @@ class PerspectiveWrapper {
 						resource: r,
 					},
 					(err, re) => {
-						if (err) throw new WrapperError("Unable to the make request");
+						if (err) throw new WrapperError("Unable to make the request");
 						else
 							try {
 								// if(typeof opt.getOriginalData == 'undefined' && typeof opt.getOriginalValue == 'undefined' || typeof opt.getOriginalData == 'null' && typeof opt.getOriginalValue == 'null') {
