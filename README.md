@@ -32,7 +32,7 @@ Here's why:
 
 ### Installation & Usage
 
-1. Details on how to get the API key from [google](https://developers.perspectiveapi.com/s/docs-get-started)
+1. Details on how to get the API key from [google](https://developers.perspectiveapi.com/s/docs-enable-the-api)
 2. Install the package
    ```sh
    npm install perspectiveapi-wrapper@latest
